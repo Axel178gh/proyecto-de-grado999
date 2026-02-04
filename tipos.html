@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tipos de TCA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        /* Esto hace que el desplazamiento sea suave y no un salto brusco */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="contenedor-titulo-logo">
+            <div class="texto-titulo">
+                <h1>Trastornos de Conducta Alimentaria</h1>
+                <p class="subtitulo">E.D.A. Espacio de Diálogo Alimentario</p>
+            </div>
+        </div>
+    </header>
+
+   <nav class="barra-navegacion">
+    <a href="index.html">Inicio</a>
+    
+    <div class="desplegable active">
+        <a href="tipos.html" class="boton-inicio" class="enlace-menu"><strong>¿Qué son los T.C.A.?</strong></a>
+        <div class="contenido-desplegable">
+            <a href="#tipos-tca">Tipos Comunes de T.C.A.</a>
+        </div>
+    </div>
+   <div class="desplegable">
+            <a href="causas.html" class="enlace-menu">Causas Y Factores</a>
+            <div class="contenido-desplegable">
+                <a href="causas.html#Signos">Signos de Alerta</a>
+            </div>
+    </div>
+    <a href="ayuda.html">Ayuda</a>
+<div class="desplegable">
+            <a href="Videos.html" class="enlace-menu">Videos e Interactivos</a>
+            <div class="contenido-desplegable">
+                <a href="Videos.html#Juegos">Juegos interactivos</a>
+            </div>
+        </div>    <a href="Creadores.html">Creadores</a>
+ </nav>
+
+   <section class="contenido">
+
+       <h2>¿Qué son los T.C.A.?</h2>
+
+       <p>
+           Los Trastornos de Conducta Alimentaria (T.C.A.) son afecciones complejas
+           que afectan la relación con la comida, el peso y la imagen corporal.
+           Se originan por una combinación de factores biológicos, psicológicos y
+           sociales, lo que puede desencadenar consecuencias graves para la salud.
+       </p>
+
+       <img src="imagen/img4.jpg"
+            alt="Ilustración sobre Trastornos de Conducta Alimentaria">
+
+       <h2 id="tipos-tca">Tipos Comunes de T.C.A.</h2>
+
+       <p>
+           Existen varios tipos de Trastornos de Conducta Alimentaria, siendo los
+           más frecuentes los siguientes:
+       </p>
+
+       <ul>
+           <li>
+               <strong>Anorexia Nerviosa:</strong>
+               Restricción severa de la ingesta alimentaria, con miedo intenso a
+               ganar peso y distorsión de la imagen corporal.
+           </li>
+
+           <li>
+               <strong>Bulimia Nerviosa:</strong>
+               Ciclos de atracones alimentarios seguidos de comportamientos
+               compensatorios como vómitos autoinducidos, uso de laxantes o
+               ejercicio extremo.
+           </li>
+
+           <li>
+               <strong>Trastorno por Atracón:</strong>
+               Consumo de grandes cantidades de comida en poco tiempo, sin
+               realizar acciones compensatorias, acompañado de sentimientos de
+               culpa o pérdida de control.
+           </li>
+
+           <li>
+               <strong>Otros T.C.A.:</strong>
+               Incluyen trastornos por evitación o restricción de la ingesta y
+               trastornos de la imagen corporal no especificados.
+           </li>
+       </ul>
+
+       <img src="imagen/img5.jpg" style="width: 350px; height: auto;" alt="Descripción"
+            alt="Ilustración de los tipos más comunes de Trastornos de Conducta Alimentaria">
+       <p>Los trastornos alimenticios pueden tener un impacto serio en la salud física y mental, especialmente cuando duran mucho tiempo. En el cuerpo pueden causar desnutrición, debilidad, mareos, problemas hormonales, caída del cabello, daño en dientes y encías, alteraciones digestivas y afectación del corazón (como latidos irregulares). En adolescentes, también pueden interferir con el crecimiento y el desarrollo normal</p>
+       <p>En la salud mental y emocional, suelen provocar ansiedad, depresión, baja autoestima, culpa y aislamiento social. La persona puede volverse muy rígida con la comida, evitar situaciones sociales y vivir con miedo constante al peso o a comer. Por eso es tan importante detectarlos a tiempo: con apoyo profesional y acompañamiento, la recuperación es posible y la salud puede mejorar mucho.</p>
+       <center>
+           <h2><strong>Juego Interactivo sobre los Trastornos Alimenticios</strong></h2>
+           <iframe id="miJuego"
+                   width="500"
+                   height="350"
+                   src="https://es.educaplay.com/juego/27635273-trastornos_alimenticios.html"
+                   frameborder="0"
+                   allow="fullscreen"
+                   allowfullscreen
+                   webkitallowfullscreen
+                   mozallowfullscreen>
+           </iframe>
+
+           <div class="info-tarjeta">
+               <button onclick="abrirFullscreen()" style="cursor:pointer; background:#1976d2; color:white; border:none; padding:10px 20px; border-radius:5px; font-weight:bold; margin-top:10px;">
+                   VER EN PANTALLA COMPLETA ⛶
+               </button>
+           </div>
+       </center>
+
+       <script>
+           function abrirFullscreen() {
+               var elem = document.getElementById("miJuego");
+               if (elem.requestFullscreen) {
+                   elem.requestFullscreen();
+               } else if (elem.webkitRequestFullscreen) { /* Safari */
+                   elem.webkitRequestFullscreen();
+               } else if (elem.msRequestFullscreen) { /* IE11 */
+                   elem.msRequestFullscreen();
+               }
+           }
+       </script>
+   </section>
+
+    <footer>
+        <p>© 2026 | E.D.A. – Colegio Dolores Sucre</p>
+    </footer>
+
+</body>
+</html>
