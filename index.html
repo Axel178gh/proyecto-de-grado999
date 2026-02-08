@@ -3,38 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitio en Mantenimiento</title>
+    <title>AVISO URGENTE</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial Black', sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #000; /* Fondo negro para mayor contraste */
+            color: #ff0000; /* Letras rojas */
             text-align: center;
         }
-        .container {
-            padding: 20px;
-            border: 1px solid #ccc;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        .alerta {
+            padding: 30px;
+        }
+        .icono-grande {
+            font-size: 100px; /* Icono muy grande */
+            margin-bottom: 20px;
+            display: block;
         }
         h1 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            margin: 10px 0;
+        }
+        p {
             font-size: 1.5rem;
-            margin-bottom: 10px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <div class="aviso">
-        <div class="icono">⚠️</div>
-        <h1><strong>Sitio temporalmente fuera de servicio por mantenimiento</strong></h1>
+    <div class="alerta">
+        <span class="icono-grande">⚠️</span>
+        <h1><strong>Sitio temporalmente fuera de servicio</strong></h1>
+        <p><strong>Hasta que se comunique con el creador del sitio web</strong></p>
     </div>
 </body>
 </html>
-
 
